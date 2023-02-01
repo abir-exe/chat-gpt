@@ -1,0 +1,30 @@
+header nav {
+    display: none;
+  }
+  
+  header nav.expanded {
+    display: block;
+  }
+  
+  .menu-toggle {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .menu-toggle.close:before {
+    content: "\f00d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+  
+  @media (min-width: 800px) {
+    header nav {
+      display: block;
+    }
+  
+    .menu-toggle {
+      display: none;
+    }
+  }
+  
